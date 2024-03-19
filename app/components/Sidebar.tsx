@@ -17,7 +17,7 @@ const Sidebar = () => {
           <LuHome />
         </Link>
       </div>
-      <ul className='flex flex-col gap-6'>
+      <ul className='flex flex-col gap-12'>
         <li className='menuItem '>
           <Link href='/news'>
             <LuNewspaper />
@@ -39,7 +39,7 @@ const Sidebar = () => {
           </Link>
         </li>
       </ul>
-      <div className='settings'>
+      <div className='settings cursor-pointer'>
         <LuSettings />
       </div>
     </nav>
