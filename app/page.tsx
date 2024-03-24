@@ -1,5 +1,6 @@
 import Statusbar from './components/Statusbar';
 import Weather from './components/Weather';
+import '@sweetalert2/theme-dark/dark.css';
 
 export default function Home() {
   return (
