@@ -1,4 +1,4 @@
-import { cityObject } from './Weather';
+import { cityObject } from "./Weather";
 
 // import { type cityObject } from './Weather';
 const CitySelectButtons = ({
@@ -9,14 +9,14 @@ const CitySelectButtons = ({
   handleSelectCity: Function;
 }) => {
   return (
-    <div className='flex flex-wrap gap-2'>
+    <div className="flex flex-wrap gap-2">
       {citiesList.map(({ name, country, lat, lon, state }) => (
         <button
-          className='bg-cyan-600 p-2 rounded-full text-white'
+          className="rounded-full bg-cyan-600 p-2 text-slate-200"
           key={name + lon + lat}
           onClick={() => handleSelectCity({ name, country, lat, lon, state })}
         >
-          {name},{state ? state + ',' : ''} {country}
+          {name},{state ? state + "," : ""} {country}
         </button>
       ))}
     </div>
